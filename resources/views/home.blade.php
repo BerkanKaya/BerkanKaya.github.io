@@ -34,7 +34,9 @@
     <p class="description">Ik ben een erg enthiousaste student wanneer het komt op Web Development en Design. En streef altijd tot perfectionisme</p>
 
     <div class="logoBackground">
-    <img src="images/berkan_logowit.png" class="logo">
+        <div class="moveLogo">
+            <img src="images/berkan_logowit.png" class="logo">
+        </div>
     </div>
 
 </body>
