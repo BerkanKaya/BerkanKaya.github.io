@@ -20,7 +20,7 @@ body{
     word-spacing: 0.7em;
 }
 
-a{
+.links{
     position: relative;
     text-decoration: none;
     background: linear-gradient(#a91f1f 10%, #e8dcca 100%);
@@ -30,30 +30,6 @@ a{
     left: 55%;
     bottom: 6px;
     animation: moveRightnav 1s ease-out forwards;
-}
-
-@keyframes moveRightnav{
-    0%{
-        left:-70%;
-    }
-    100%{
-        left: 55%; 
-    }
-}
-
-.icons{
-    position: relative;
-    left: 0.7%;
-    animation: moveRightIcons 1s ease-out forwards;
-}
-
-@keyframes moveRightIcons{
-    0%{
-        left:-100%;
-    }
-    100%{
-        left: 0.7%; 
-    }
 }
 
 .intro{
@@ -71,23 +47,15 @@ a{
     animation: moveRight 1s ease-out 0.3s forwards;
 }
 
-@keyframes moveRight{
-    0%{
-        left:-100%;
-    }
-    100%{
-        left: 7%; 
-    }
-}
-
-i{
+.icons{
     position: relative;
     top: 15px;
-    left: 7%;
+    left:7.5%;
     color: #fff;
     background: linear-gradient(#a91f1f 10%, #e8dcca 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: moveRightIcons 1s ease-out forwards;
 }
 
 .description{
@@ -105,24 +73,13 @@ i{
 }
 
 .logo{
-    position: absolute;
-    top: 12%;
+    position: relative;
+    bottom: 68%;
     display: block;
-    left:8%;
+    left:13%;
     height: 150px;
     width:auto;
-    animation: hover 3s linear infinite;
-}
-
-.logoBackground{
-    position: relative;
-    margin-top: 30px;
-    top: 40px;
-    left: 7%;
-    height: 200px;
-    width: 85%;
-    border-radius: 10%;
-    background-color:#1d1b1b;   
+    animation: hover 3s linear 2s infinite;
 }
 
 .moveLogo{
@@ -130,6 +87,161 @@ i{
     left: -100%;
     height: 200px;
     animation: moveRightLogo 1s ease-out 0.9s forwards;
+}
+
+.logoBackground{
+    position: relative;
+    margin-top: 30px;
+    top: 500px;
+    left: 7.5%;
+    height: 200px;
+    width: 85%;
+    border-radius: 10%;
+    background-color:#1d1b1b;   
+    animation: moveUp 1s ease-out 0.9s forwards;
+}
+
+.workBackground{
+    position: relative;
+    bottom: 100px;
+    left: 7.5%;
+    height: 350px;
+    width: 85%;
+    border-radius: 10%;
+    background-color:#1d1b1b;   
+    opacity: 0;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity 4s .25s ease-out;
+}
+
+.workBackground.is-visible {
+    opacity: 1;
+    animation:  moveRightAnimation 1.5s ease-out forwards;
+}
+
+.tickit{
+    position: absolute;
+    top: 110px;
+    left: 12%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.myWork{
+    position: absolute;
+    top: 50px;
+    left: 12%;
+    font-size: 14px;
+    opacity: .6;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #fefaf6;
+}
+
+.tickitFoto{
+    position: relative;
+    top: 170px;
+    left: 10%;
+    border-radius: 10%;
+    height: 100px;
+    width: auto;
+}
+
+.contactBackground{
+    position: relative;
+    bottom: 40px;
+    left: -100%;
+    height: 350px;
+    width: 85%;
+    border-radius: 10%;
+    background-color:#1d1b1b;   
+    opacity: 0;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity 4s .25s ease-out;
+}
+
+.contactBackground.is-visible {
+    opacity: 1;
+    animation:  moveRightAnimation 1.5s ease-out forwards;
+}
+
+.questions{
+    position: absolute;
+    top: 50px;
+    left: 12%;
+    font-size: 14px;
+    opacity: .6;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #fefaf6;
+}
+
+.mail{
+    position: absolute;
+    top: 125px;
+    left: 12%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    animation: hoverMail 2s linear 2s infinite;
+}
+
+#envelope{
+    position: absolute;
+    top: 150px;
+    left: 23%;
+    margin: 0 0 auto;
+    color:#fff;
+}
+
+@keyframes moveRightAnimation{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left: 7.5%; 
+    }
+}
+
+@keyframes moveRightnav{
+    0%{
+        left:-70%;
+    }
+    100%{
+        left: 55%; 
+    }
+}
+
+@keyframes moveRightIcons{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left: 7%; 
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left: 7.5%; 
+    }
+}
+
+@keyframes moveUp{
+    0%{
+        top: 500px;
+    }
+    100%{
+        top: 40px;
+    }
 }
 
 @keyframes moveRightLogo{
@@ -143,30 +255,33 @@ i{
 
 @keyframes hover{
     0%{
-        top:12%;
+        bottom:68%;
     }
     25%{
-        top:16%;
+        bottom:72%;
     }
     75%{
-        top:8%; 
+        bottom:64%; 
     }
     100%{
-        top: 12%; 
+        bottom: 68%; 
     }
 }
-/* 
-@keyframes hover{
+
+@keyframes hoverMail{
     0%{
-        left:-100%;
+        top:125px;
     }
-    50%{
-        left:100%;
+    25%{
+        top:129px;
+    }
+    75%{
+        top:121px; 
     }
     100%{
-        left: 8%; 
+        top: 125px; 
     }
-} */ 
+}
 
     @media only screen and (min-width: 1024px) {
        
