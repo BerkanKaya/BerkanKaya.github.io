@@ -23,7 +23,7 @@ body{
 .links{
     position: relative;
     text-decoration: none;
-    background: linear-gradient(#a91f1f 10%, #e8dcca 100%);
+    background: linear-gradient(white 10%, white 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
@@ -37,11 +37,11 @@ body{
     top: 50px;
     left: -100%;
     color: #fff;
-    background: linear-gradient(#a91f1f 10%, #e8dcca 100%);
+    background: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size:40px;
-    width:250px;
+    width:75%;
     font-weight: 900;
     margin-top: 40px;
     animation: moveRight 1s ease-out 0.3s forwards;
@@ -52,7 +52,7 @@ body{
     top: 15px;
     left:7.5%;
     color: #fff;
-    background: linear-gradient(#a91f1f 10%, #e8dcca 100%);
+    background: linear-gradient(white 10%, white 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: moveRightIcons 1s ease-out forwards;
@@ -191,7 +191,6 @@ body{
     position: absolute;
     top: 150px;
     left: 23%;
-    margin: 0 0 auto;
     color:#fff;
 }
 
