@@ -23,23 +23,23 @@
 <body>
     <div class="navbar"> 
         <div class="icons">
-            <i id="instaLogo"class="fa fa-instagram"></i>
-            <i id="linkedInLogo"class="fa fa-linkedin"></i>
-            <i id="githubLogo"class="fa fa-github"></i>
+            <a href="https://www.instagram.com/berkan_078/"><i id="instaLogo" class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/berkan-kaya-860236244"><i id="linkedInLogo"class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/BerkanKaya"><i id="githubLogo"class="fa fa-github"></i></a>
         </div>
         <div class="links">
-            <a href="#">Werk</a>
-            <a href="#">Contact</a> 
+            <a href="#scrollToWork">Werk</a>
+            <a href="#scrollToContact">Contact</a> 
         </div>
     </div>
 
     <p class="intro">Hoi. Ik ben Berkan. Een Software Developer </p>
 
-    <p class="description">Ik ben een erg enthiousaste student wanneer het komt op Web Development en Design. En streef altijd tot perfectionisme</p>
+    <p class="description">Ik ben een erg enthousiaste student wanneer het komt op Web Development en Design. En streef altijd tot perfectionisme</p>
 
     <div class="logoBackground"></div>
 
-    <div class="moveLogo">
+    <div class="moveLogo" id="scrollToWork">
         <img src="images/berkan_logowit.png" class="logo">
     </div>
 
@@ -49,7 +49,7 @@
         <img src="images/schermopnametickit.png" class="tickitFoto">
     </div>
 
-    <div class="contactBackground show-on-scroll">
+    <div class="contactBackground show-on-scroll" id="scrollToContact">
         <p class="questions"> Vragen? </p> 
         <p class="mail"> Stuur me een mailtje! </p> 
         <i id="envelope" class="fa fa-envelope fa-8x"></i>
