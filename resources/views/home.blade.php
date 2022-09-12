@@ -33,9 +33,9 @@
         </div>
     </div>
 
-    <p class="intro">Hoi. Ik ben Berkan. Een Software Developer </p>
+    <p class="intro">Hoi. Ik ben Berkan. een Designer. </p>
 
-    <p class="description">Ik ben een erg enthousiaste student wanneer het komt op Web Development en Design. En streef altijd tot perfectionisme</p>
+    <p class="description">Ik ben een enthousiaste student wanneer het komt op Web Development/Design. En streef altijd tot perfectionisme.</p>
 
     <div class="logoBackground"></div>
 
