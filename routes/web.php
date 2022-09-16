@@ -17,3 +17,5 @@ use App\Http\Controllers\Controller;
 Route::get('/', function () {
     return view('/home');
 });
+
+Route::get('myWork', [Controller::class, 'myWork']);
