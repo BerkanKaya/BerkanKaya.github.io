@@ -42,7 +42,11 @@ body{
     -webkit-text-fill-color: transparent;
     font-weight: 500;
     font-size: 3.5em;
+<<<<<<< HEAD
     width: 228px;
+=======
+    width: 227px;
+>>>>>>> main
     letter-spacing: -1.5px;
     line-height: 110%;
     margin: 0;
