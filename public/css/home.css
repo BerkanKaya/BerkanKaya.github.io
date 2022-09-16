@@ -15,6 +15,7 @@ body{
     height: 6vh;
     left: 0%;
     background-color: #111;
+    box-shadow: 0px 10px 50px 40px #111;
     z-index: 2;
     word-spacing: 0.7em;
 }
@@ -39,13 +40,17 @@ body{
     background: linear-gradient(270deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 600;
-    font-size: 3em;
-    width: 90%;
+    font-weight: 500;
+    font-size: 3.5em;
+    width: 227px;
     letter-spacing: -1.5px;
     line-height: 110%;
     margin: 0;
     animation: moveRight 1s ease-out 0.3s forwards;
+}
+
+.intro span{
+    font-weight:bolder;
 }
 
 .icons{
@@ -61,7 +66,7 @@ body{
 
 .description{
     position: relative;
-    top: 80px;
+    top: 70px;
     left: -100%;
     width: 90%;
     color: #fff;
@@ -69,14 +74,14 @@ body{
     margin: 2em 0 0;
     animation: moveRight 1s ease-out 0.6s forwards;
     font-size: 1.1em;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 .logo{
     position: relative;
-    bottom: 68%;
+    bottom: 1%;
     display: block;
-    left:13%;
+    left:10%;
     height: 150px;
     width:auto;
     animation: hover 3s linear 2s infinite;
@@ -91,10 +96,10 @@ body{
 
 .logoBackground{
     position: relative;
-    margin-top: 60px;
+    margin-top: 70px;
     top: 500px;
     left: 5%;
-    height: 200px;
+    height: 150px;
     width: 90%;
     border-radius: 15%;
     background-color:#1d1b1b;   
@@ -103,7 +108,7 @@ body{
 
 .workBackground{
     position: relative;
-    bottom: 100px;
+    margin-top: 105px;
     height: 350px;
     width: 85%;
     border-radius: 10%;
@@ -155,7 +160,7 @@ html {
 
 .contactBackground{
     position: relative;
-    bottom: 40px;
+    margin-top: 80px;
     left: -100%;
     height: 350px;
     width: 85%;
@@ -204,7 +209,7 @@ html {
 
 @keyframes moveRightAnimation{
     0%{
-        left:-100%;
+        left: -100%;
     }
     100%{
         left: 7.5%; 
@@ -213,7 +218,7 @@ html {
 
 @keyframes moveRightnav{
     0%{
-        left:-70%;
+        left: -70%;
     }
     100%{
         left: 55%; 
@@ -222,7 +227,7 @@ html {
 
 @keyframes moveRightIcons{
     0%{
-        left:-100%;
+        left: -100%;
     }
     100%{
         left: 7%; 
@@ -243,43 +248,43 @@ html {
         top: 500px;
     }
     100%{
-        top: 40px;
+        top: 30px;
     }
 }
 
 @keyframes moveRightLogo{
     0%{
-        left:-100%;
+        left: -100%;
     }
     100%{
-        left: -1%; 
+        left: 0%; 
     }
 }
 
 @keyframes hover{
     0%{
-        bottom:68%;
+        bottom: 1%;
     }
     25%{
-        bottom:72%;
+        bottom: 5%;
     }
     75%{
-        bottom:64%; 
+        bottom: -3%; 
     }
     100%{
-        bottom: 68%; 
+        bottom: 1%; 
     }
 }
 
 @keyframes hoverMail{
     0%{
-        top:125px;
+        top: 125px;
     }
     25%{
-        top:129px;
+        top: 129px;
     }
     75%{
-        top:121px; 
+        top: 121px; 
     }
     100%{
         top: 125px; 

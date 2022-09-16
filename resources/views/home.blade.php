@@ -33,14 +33,14 @@
         </div>
     </div>
 
-    <p class="intro">Hoi. Ik ben Berkan. een Designer. </p>
+    <p class="intro">Ik ben <span>Berkan</span>. Ik <span> Design.</span> </p>
 
     <p class="description">Ik ben een enthousiaste student wanneer het komt op Web Development/Design. En streef altijd tot perfectionisme.</p>
 
-    <div class="logoBackground"></div>
-
-    <div class="moveLogo" id="scrollToWork">
-        <img src="images/berkan_logowit.png" class="logo">
+    <div class="logoBackground">
+        <div class="moveLogo">
+            <img src="images/berkan_logowit.png" class="logo"  id="scrollToWork">
+        </div>
     </div>
 
     <div class="workBackground show-on-scroll">
@@ -53,6 +53,11 @@
         <p class="questions"> Vragen? </p> 
         <p class="mail"> Stuur me een mailtje! </p> 
         <i id="envelope" class="fa fa-envelope fa-8x"></i>
+    </div>
+
+    <div>
+        <br>
+        <br>
     </div>
 
 </body>
