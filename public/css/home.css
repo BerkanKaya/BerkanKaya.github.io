@@ -1,82 +1,42 @@
-@font-face {
-    font-family: RecoletaRegularDEMO;
-    src: url(../fonts/Recoleta-RegularDEMO.otf);
-}
-
-body{
-    font-family: RecoletaRegularDEMO;
-    overflow-x: hidden;
-}
-
-.navbar{
-    position: fixed;
-    top: 0%;
-    width: 100%;
-    height: 6vh;
-    left: 0%;
-    background-color: black;
-    box-shadow: 0px 10px 100px 45px rgba(0, 0, 0, 1);
-    z-index: 2;
-    word-spacing: 0.7em;
-}
-
-.links{
-    position: relative;
-    text-decoration: none;
-    background: linear-gradient(white 10%, white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    left: 55%;
-    bottom: 6px;
-    animation: moveRightnav 1s ease-out forwards;
-}
-
 .intro{
     position: relative;
-    top: 50px;
+    top: 85px;
     left: -100%;
     color: #fff;
-    background: linear-gradient(271deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    background: linear-gradient(270deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size:40px;
-    width:75%;
-    font-weight: 900;
-    margin-top: 40px;
+    font-weight: 500;
+    font-size: 3.5em;
+    width: 228px;
+    letter-spacing: -1.5px;
+    line-height: 110%;
+    margin: 0;
     animation: moveRight 1s ease-out 0.3s forwards;
 }
 
-.icons{
-    position: relative;
-    top: 15px;
-    left:7.5%;
-    color: #fff;
-    background: linear-gradient(white 10%, white 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: moveRightIcons 1s ease-out forwards;
+.intro span{
+    font-weight:bolder;
 }
 
 .description{
     position: relative;
-    top: 35px;
+    top: 70px;
     left: -100%;
-    width: 85%;
+    width: 90%;
     color: #fff;
     font-weight: 500;
-    margin-top: 50px;
-    font-size: 1.3em;
-    line-height: 1.5;
     margin: 2em 0 0;
     animation: moveRight 1s ease-out 0.6s forwards;
+    font-size: 1.1em;
+    line-height: 2;
 }
 
 .logo{
     position: relative;
-    bottom: 68%;
+    bottom: 1%;
     display: block;
-    left:13%;
+    left:10%;
     height: 150px;
     width:auto;
     animation: hover 3s linear 2s infinite;
@@ -91,26 +51,31 @@ body{
 
 .logoBackground{
     position: relative;
-    margin-top: 30px;
+    margin-top: 70px;
     top: 500px;
-    left: 7.5%;
-    height: 200px;
-    width: 85%;
-    border-radius: 10%;
+    left: 5%;
+    height: 150px;
+    width: 90%;
+    border-radius: 15%;
     background-color:#1d1b1b;   
     animation: moveUp 1s ease-out 0.9s forwards;
 }
 
 .workBackground{
     position: relative;
-    bottom: 100px;
-    left: 7.5%;
+    margin-top: 105px;
     height: 350px;
     width: 85%;
     border-radius: 10%;
     background-color:#1d1b1b;   
-    opacity: 0;      
+    opacity: 0;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity 0.75s .25s ease-out;
 }
+/* 
+html {
+    scroll-behavior: smooth;
+  } */
 
 .workBackground.is-visible {
     opacity: 1;
@@ -150,13 +115,15 @@ body{
 
 .contactBackground{
     position: relative;
-    bottom: 40px;
+    margin-top: 80px;
     left: -100%;
     height: 350px;
     width: 85%;
     border-radius: 10%;
     background-color:#1d1b1b;   
     opacity: 0;
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity 0.75s .25s ease-out;
 }
 
 .contactBackground.is-visible {
@@ -196,7 +163,7 @@ body{
 
 @keyframes moveRightAnimation{
     0%{
-        left:-100%;
+        left: -100%;
     }
     100%{
         left: 7.5%; 
@@ -205,7 +172,7 @@ body{
 
 @keyframes moveRightnav{
     0%{
-        left:-70%;
+        left: -70%;
     }
     100%{
         left: 55%; 
@@ -214,7 +181,7 @@ body{
 
 @keyframes moveRightIcons{
     0%{
-        left:-100%;
+        left: -100%;
     }
     100%{
         left: 7%; 
@@ -226,7 +193,7 @@ body{
         left:-100%;
     }
     100%{
-        left: 7.5%; 
+        left: 5%; 
     }
 }
 
@@ -235,44 +202,44 @@ body{
         top: 500px;
     }
     100%{
-        top: 40px;
+        top: 30px;
     }
 }
 
 @keyframes moveRightLogo{
     0%{
-        left:-100%;
+        left: -100%;
     }
     100%{
-        left: -1%; 
+        left: 0%; 
     }
 }
 
 @keyframes hover{
     0%{
-        bottom:68%;
+        bottom: 1%;
     }
     25%{
-        bottom:72%;
+        bottom: 5%;
     }
     75%{
-        bottom:64%; 
+        bottom: -3%; 
     }
     100%{
-        bottom: 68%; 
+        bottom: 1%; 
     }
 }
 
 @keyframes hoverMail{
     0%{
-        top:125px;
+        top: 125px;
     }
     25%{
-        top:129px;
+        top: 129px;
     }
     75%{
-        top:121px; 
-    }
+        top: 121px; 
+     }
     100%{
         top: 125px; 
     }

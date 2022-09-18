@@ -11,7 +11,7 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public function home(){
-        return view('/home');
-    }
+    public function mywork(){
+        return view('myWork');
+    }   
 }
