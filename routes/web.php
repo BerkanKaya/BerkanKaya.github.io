@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('myWork', [Controller::class, 'myWork']);
+Route::get('contact', [Controller::class, 'contact']);

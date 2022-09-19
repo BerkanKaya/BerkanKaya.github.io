@@ -14,4 +14,8 @@ class Controller extends BaseController
     public function mywork(){
         return view('myWork');
     }   
+
+    public function contact(){
+        return view('contact');
+    }   
 }
