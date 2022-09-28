@@ -21,13 +21,16 @@
             <img src="images/berkan_logowit.png" class="logo" id="scrollToWork">
         </div>
     </div>
-    <a href="{{ url('myWork') }}">
+
+    @foreach($work as $works)
+    <a href="{{ url('showWork', $works->id) }}">
         <div class="workBackground show-on-scroll">
-            <p class="tickit"> Tick-It </p> 
+            <p class="tickit"> {{$works["name"]}}</p> 
             <p class="myWork"> Mijn Werk </p> 
             <img src="images/schermopnametickit.png" class="tickitFoto">
         </div>
     </a>
+    @endforeach
 
     <a href="{{ url('contact') }}">
         <div class="contactBackground show-on-scroll" id="scrollToContact">
@@ -36,7 +39,6 @@
             <i id="envelope" class="fa fa-envelope fa-8x"></i>
         </div>
     </a>
-
     <div>
         <br>
         <br>

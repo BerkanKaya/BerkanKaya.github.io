@@ -14,9 +14,6 @@ use App\Http\Controllers\Controller;
 |
 */
 
-Route::get('/', function () {
-    return view('/home');
-});
-
-Route::get('myWork', [Controller::class, 'myWork']);
+Route::get('/', [Controller::class, 'home']);
+Route::get('showWork/{id}', [Controller::class, 'myWork']);
 Route::get('contact', [Controller::class, 'contact']);
