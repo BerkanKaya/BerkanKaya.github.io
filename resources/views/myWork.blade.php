@@ -6,8 +6,8 @@
 
 @section('links')
 <div class="links">
-    <a href="{{ url('home') }}">Home</a>
-    <a href="#scrollToContact">Contact</a> 
+    <a href="{{ url('/') }}">Home</a>
+    <a href="{{ url('contact') }}">Contact</a> 
 </div>
 @endsection
 

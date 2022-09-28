@@ -4,9 +4,9 @@
 @endsection
 
 @section('links')
-<div class="links">
-    <a href="{{ url('home') }}">Home</a>
-    <a href="#scrollToContact">Contact</a> 
+<div class="links"> 
+    <a href="{{ url('/') }}">Home</a>
+    <a href="{{ url('myWork') }}">Werk</a>
 </div>
 @endsection
 
