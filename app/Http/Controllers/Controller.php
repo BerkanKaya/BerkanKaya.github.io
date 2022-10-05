@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -15,13 +16,12 @@ class Controller extends BaseController
 
     public function home(){
         $work = Work::All();
-        $workId = Work::where("id", $work);
-        return view('home', ['work'=>$work, 'workId'=>$workId]);
+        return view('home', ['work'=>$work]);
     }
 
-    public function myWork($id){
-
-        return view('show.showWork');
+    public function myWork($work_id){
+        $myWork = Work::where('id', $work_id)->get();
+        return view('show.showWork', ['myWork'=>$myWork]);
     }   
 
     public function contact(){

@@ -27,7 +27,7 @@
         <div class="workBackground show-on-scroll">
             <p class="tickit"> {{$works["name"]}}</p> 
             <p class="myWork"> Mijn Werk </p> 
-            <img src="images/schermopnametickit.png" class="tickitFoto">
+            <img src="images/{{$works["image"]}}" class="tickItPicture">
         </div>
     </a>
     @endforeach

@@ -1,0 +1,62 @@
+.myWork{
+    background-color: #1d1b1b;
+    height: 550px;
+}
+
+.myWorkHeader{
+    position: relative;
+    top: 130px;
+    left: -100%;
+    color: #fff;
+    background: linear-gradient(270deg,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 3.5em;
+    width: 90%;
+    letter-spacing: -1.5px;
+    line-height: 110%;
+    margin: 0;
+    animation: moveRight 1s ease-out 0.3s forwards;
+}
+
+.myWorkIntro{
+    position: relative;
+    top: 110px;
+    left: -100%;
+    width: 90%;
+    color: #fff;
+    font-weight: 500;
+    margin: 2em 0 0;
+    font-size: 1.1em;
+    line-height: 2;
+    animation: moveRight 1s ease-out 0.6s forwards;
+}
+
+.myWorkPicture{
+    position: relative;
+    top: 155px;
+    left: -100%;
+    height: 130px;
+    width: 90%;
+    animation: moveMyWorkPictureRight 1s ease-out 0.9s forwards;
+}
+
+@keyframes moveMyWorkPictureRight{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left: 5%;
+    }
+}
+
+@keyframes moveRight{
+    0%{
+        left:-100%;
+    }
+    100%{
+        left: 5%; 
+    }
+}
+

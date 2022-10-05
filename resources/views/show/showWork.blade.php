@@ -12,5 +12,13 @@
 @endsection
 
 @section('content')
-    
+
+@foreach($myWork as $myWorks)
+<div class="myWork"> 
+    <p class="myWorkHeader"> {{$myWorks["name"]}}.</p> 
+    <p class="myWorkIntro"> Tick-It is een ticketsysteem gemaakt voor de docenten en studenten van het Da Vinci College</p>
+    <img src="../images/{{$myWorks["image"]}}" class="myWorkPicture">
+</div>
+@endforeach
+
 @endsection
